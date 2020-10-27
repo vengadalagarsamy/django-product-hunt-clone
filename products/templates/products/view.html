@@ -1,0 +1,69 @@
+{% extends 'products/base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <section class="container s3">
+      <article class="row">
+        <div class="col-2">
+          <img src="{{ product.icon.url }}" class="i1 img-fluid">
+        </div>
+        <div class="col-10">
+          <a href="{{ product.url }}"><h1 class="h1">{{ product.title }}</h1></a>
+          {{ product.description }}
+        </div>
+      </article>
+    </section>
+
+    <section class="container s2">
+      <article class="row">
+        <div class="d1 col-8">
+          <img src="{{ product.image.url }}" class="img-fluid">
+          <hr>
+          <p class="p1">{{ product.body }}</p>
+          <h4 class="q1">Featured on {{ product.pub_date_pretty }}</h4>
+        </div>
+        <div class="col-4">
+          <a href="javascript:{document.getElementById('upvote').submit()}"><button class="bt3"><span class="bt2t">^</span> UPVOTE <span class=bt3t>{{ product.votes_total }}</span></button></a>
+          <hr>
+          <a href="{{ product.url }}"><div class="container d2">
+            <div class="row">
+              <div class="col-2">
+                <img src="{% static 'nav.jpg' %}" class="img1">
+              </div>
+              <div class="col-7 ">
+                <p class="p2">Website</p>
+                <p class="p3">{{ product.url }}</p>
+              </div>
+              <div class="col-1">
+                <h1 class="img2">></h1>
+              </div>
+            </div>
+          </div>
+          </a>
+          <hr>
+
+          <div class="container d3">
+            <p class=p4>HUNTER</p>
+            <p class=p5>{{ product.user }}</p>
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <form id='upvote' action="{% url 'upvote' product.id %}" method="POST">
+      {% csrf_token %}
+      <input type="hidden">
+    </form>
+    <br>
+    <br>
+  </body>
+</html>
+
+{% endblock %}

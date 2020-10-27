@@ -1,0 +1,35 @@
+{% extends 'products/base.html' %}
+{% block content %}
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'todo/current.css' %}">
+    <title>Login</title>
+  </head>
+  <body>
+
+
+
+    <section class="container s3">
+      <h1 class="h7">Login</h1>
+      <br>
+      <form method="post">
+        {% csrf_token %}
+        {% load widget_tweaks %}
+
+        {% for field in form %}
+        <div class="form-group {% if field.errors %}alert alert-danger{% endif %}">
+          {{ field.errors }}
+          {{ field.label_tag }}
+          {% render_field field class="form-control" %}
+        </div>
+        {% endfor %}
+
+        <button type="submit" class="btn btn-outline-secondary">Login</button>
+      </form>
+
+    </section>
+    {% endblock %}
+  </body>
+</html>

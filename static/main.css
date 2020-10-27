@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none!important;
+}
+
+.navimg {
+  height: 7%;
+  width: 7%
+}
+
+.h7 {
+  font-size: 200%;
+  font-weight: 600;
+  padding-top: 2%;
+}
+
+.h6 {
+  font-size: 200%;
+  font-weight: 600;
+  padding-top: 2%;
+  padding-bottom: 2%
+}
+
+
+.b1 {
+  background-color: #F3F3F3
+}
+
+.bt1 {
+  background-color: #ffffff;
+  height: 28px;
+  width: 120%;
+  vertical-align: middle;
+  font-size: 70%;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.bt1:hover {
+  background-color: #E8E8E8
+}
+
+.bt2 {
+  background-color: #CD5231;
+  height: 28px;
+  width: 120%;
+  vertical-align: middle;
+  font-size: 70%;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.bt2:hover {
+  background-color: #E4461A;
+  color: #3D3D3D
+}
+
+/*-----------*/
+
+.s0 {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.s1 {
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 3%
+}
+
+.s2 {
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 1%;
+}
+
+.s3 {
+  padding-top: 2%
+}
+
+.s4 {
+  padding-top: 2%
+}
+
+/*-------VIEW-------*/
+
+.img1 {
+  width: 150%;
+  height: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%
+}
+
+.img2 {
+  font-size: 200%;
+  font-weight: 800;
+  color: #ADADAD;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 10px
+}
+
+.i1 {
+  width: 80px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15%
+}
+
+.h1 {
+  font-size: 180%;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  padding-top: 3%
+}
+
+.h1:hover {
+  color:#6F6F6F;
+}
+
+.d1 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%
+}
+
+.i2 {
+  max-height: 310px;
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p1 {
+  font-size: 100%
+}
+
+.q1 {
+  color: #6F6F6F;
+  font-size: 80%;
+}
+
+.bt3 {
+  background-color: #CD5231;
+  height: 50px;
+  width: 130%;
+  vertical-align: middle;
+  font-size: 80%;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 4px;
+  max-width: 170px
+}
+
+.bt3:hover {
+  background-color: #E4451C
+}
+
+.bt2t {
+  color: #F4C2B9;
+  padding-right: 3%;
+  font-weight: 900;
+}
+.bt3t {
+  color: #F4C2B9;
+  padding-left: 3%
+}
+
+.d2 {
+  background-color: #FFFFFF;
+  height: 60px;
+  text-decoration: none;
+  padding-top: 2.5%;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #F3F3F3;
+  border-width: thin;
+}
+
+.d2:hover {
+  border-color: #D4D3D3
+}
+
+.p2 {
+  font-weight: 600;
+  font-size: 80%;
+  color: #000000;
+  padding: 0;
+  margin: 0
+}
+
+.p3 {
+  font-size: 80%;
+  color: #7B7B7B;
+  padding: 0;
+  margin: 0;
+  padding-top: 1%
+}
+
+.d3 {
+  background-color: #FFFFFF;
+  height: 65px;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #F3F3F3;
+  border-width: thin;
+}
+
+.p4 {
+  font-size: 80%;
+  color: #7B7B7B;
+  padding: 0;
+  margin: 0;
+  padding-top: 1%
+}
+
+.p5 {
+  font-weight: 600;
+  font-size: 80%;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+/*-----Home-----*/
+
+.i2 {
+  width: 60px;
+  height: 60px;
+  display:block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%
+}
+
+.d4 {
+  background-color: #FFFFFF;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  border-bottom-width: thin;
+  border-bottom-color: #F3F3F3;
+}
+
+.d4:hover {
+  background-color: #F9F9F9
+}
+
+.d5 {
+  background-color: #FFFFFF;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  border-radius: 6px;
+}
+
+.h4 {
+  font-size: 110%;
+  font-weight: 700;
+  padding-top: 1%
+}
+
+.p6 {
+  font-size: 80%
+}
+.h2 {
+  font-size: 130%;
+  font-weight: 400;
+  padding-top:0.5%
+}
+
+.h3 {
+  font-size: 110%;
+  font-weight: 700;
+  padding-top: 3%;
+}
+
+.bt4 {
+  width: 60%;
+  height: 80%;
+  float: right;
+  background-color: #FFFFFF;
+  border-color: #E8E8E8;
+  border-width: thin;
+  font-weight: 700;
+  font-size: 90%
+}
+
+.bt4:hover {
+  background-color: #F9F9F9
+}

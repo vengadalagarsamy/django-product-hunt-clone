@@ -1,0 +1,82 @@
+
+{% extends 'products/base.html' %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <section class="container s4">
+      <div class="row">
+        <div class="col-8">
+          <h1 class="h2">Products</h1>
+        </div>
+        <div class="col-4">
+          <h1 class="h3">Hunters</h1>
+        </div>
+    </section>
+
+
+    <section class="container">
+      <div class="row">
+        <div class="col-8">
+
+          {% for product in products.all %}
+          <article class="d4" onclick="window.location='{% url 'view' product.id %}';" style="cursor: pointer;">
+          <div class="row">
+            <div class="col-2">
+              <img src="{{ product.icon.url }}" class="i2 img-fluid" />
+            </div>
+            <div class="col-8">
+              <h1 class="h4">{{ product.title }}</h1>
+              <p class="p6">{{ product.description }}</p>
+            </div>
+            <div class="col-2">
+              <a href="javascript:{document.getElementById('upvote{{ product.id }}').submit()}">
+                <button class="bt4">
+                  <div class="grid-container">
+                    <div class="item1">
+                      ^
+                    </div>
+                    <div class="item2">
+                      {{ product.votes_total }}
+                    </div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+          <form id="upvote{{ product.id }}" method="POST" action="{% url 'upvote' product.id %}">
+            {% csrf_token%}
+            <input type="hidden">
+          </form>
+          </article>
+          {% endfor %}
+
+        </div>
+        <div class="col-4">
+          <article class="d5">
+            {% for product in products.all %}
+              {{ product.user }}
+              <br>
+            {% endfor %}
+          </article>
+        </div>
+      </div>
+
+
+
+
+    </section>
+  </body>
+</html>
+
+
+
+{% endblock %}
